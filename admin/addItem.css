@@ -1,0 +1,238 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+/*--------------------*/
+
+body{
+    background-color: antiquewhite;
+    
+}
+header{
+    background-color: rgba(54, 59, 70);
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(65, 65, 65);
+    max-width: auto;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+
+}
+.img_logo{
+    width: 50px;
+    height: 50px;
+    min-height: auto;
+    min-width: auto;
+    
+}
+.menu>li>a{
+    color: black;
+    width: inherit;
+    height: inherit;
+    
+}
+.user_logo{
+    display: inline;
+    width: 4vh;
+    height: 4vh;
+    min-height: auto;
+    min-width: auto;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.btn{
+    display: flex;
+    align-items: center;
+}
+.menu>li{
+    border-radius: 2px;
+    padding: 5px;
+    width: 200px;
+    display: inline;
+    font-size: 20px;
+    margin: 5px;
+    margin-right: 10px;
+
+    background-color: aliceblue;
+
+}
+.menu>li:hover{
+    background-color: rgb(87, 174, 255);
+}
+.fixed_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    height: inherit;
+}
+.log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.window{
+    width: 80%;
+    height: 90%;
+    background-color: rgb(232, 232, 232);
+    border-radius: 5px;
+    border: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.no_header{
+    padding-top: 70px;
+    width: 100%;
+    height: 100%;
+}
+.info,.addres,.history{
+    font-size: 40px;
+    font-family: Helvetica Neue;
+}
+.information{
+    width: 70%;
+    height: inherit;
+    overflow: hidden;
+}
+div.addres{
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin: 10px;
+    padding: 20px;
+}
+.history{
+    height: 60%;
+    min-height: 20%;
+    background-color:rgb(255, 255, 255) ;
+    margin-top: 30px;
+    border-radius: 4px;
+    padding: 15px;
+}
+.btn_window{
+    background-color: rgb(170, 170, 170);
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 4px;
+    position: absolute;
+}
+.btn_window:active{
+    background-color: rgb(124, 124, 124);
+}
+.exit_log{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(48, 206, 56);
+    margin-top: 15px;
+}
+.exit_log:hover{
+    color: green
+}
+.button{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 3vh;
+    vertical-align: top;
+}
+#save_addres_btn{
+    display: none;
+}
+#admin_add_item{
+    margin-left: 15vw;
+    position: fixed;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+.additem{
+    background-color: rgb(170, 170, 170);
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.additem:active{
+    background-color: rgb(124, 124, 124);
+}
+.load_file{
+   font-size: 20px;
+   width: 250px;
+   margin-bottom: 10px;
+}
+h1,h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.description_item{
+    height: 5vh;
+    width: 35vw;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#save_btn{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 20px;
+    width: 50vw;
+}
+input.description_item{
+    width: 20vw;
+    font-size: 20px;
+    padding: 0px;
+    height: auto;
+    padding: 3px;
+}
+.msg{
+    color: red;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
